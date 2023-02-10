@@ -18,7 +18,14 @@ def greet_programmer
         b=5
         return a + b
     end
-    def halve(num)
-      num=6
-      num.is_a?(Integer) ? num / 2 : nil
-  end 
+    #def halve(num)
+      #num=6
+      #num.is_a?(Integer) ? num / 2 : nil
+  
+      def halve number
+        if number.class != Integer
+            return nil     
+        end
+      number/2
+    
+    end
